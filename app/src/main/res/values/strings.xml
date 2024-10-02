@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VideoCall</string>
+    <string name="join">Join</string>
+    <string name="enter_room_name">Enter room name</string>
+    <string name="meeting_code">meeting code</string>
+    <string name="codeclipboard">codeclipboard</string>
+</resources>

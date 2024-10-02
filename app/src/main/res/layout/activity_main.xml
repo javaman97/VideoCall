@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/generateMeetCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="@string/meeting_code" />
+
+        <ImageButton
+            android:id="@+id/copyClipboard"
+            android:clickable="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:contentDescription="@string/codeclipboard"
+            android:src="@drawable/copy_clipboard"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generateMeetCodeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="12dp"
+        android:onClick="onButtonClick"
+        android:text="Generate Code"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_margin="12dp"
+        android:hint="OR" />
+
+
+    <EditText
+        android:id="@+id/conferenceName"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="12dp"
+        android:hint="@string/enter_room_name" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="12dp"
+        android:onClick="onButtonClick"
+        android:text="@string/join"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
